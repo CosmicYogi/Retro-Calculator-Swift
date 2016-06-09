@@ -107,7 +107,7 @@ class ViewController: UIViewController {
         if (buttonSound.playing){
             buttonSound.stop()
         }
-        //buttonSound.play()
+        buttonSound.play()
     }
 }
 
