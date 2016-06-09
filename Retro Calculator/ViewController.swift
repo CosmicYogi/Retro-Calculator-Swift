@@ -67,6 +67,14 @@ class ViewController: UIViewController {
         processOperation(currentOperation)
     }
     
+    @IBAction func onClearPressed(sender: AnyObject) {
+        play();
+        leftString = ""
+        rightString = ""
+        runningString = ""
+        outputLabel.text = ""
+        currentOperation = Operations.Empty
+    }
     func processOperation(operation : Operations) -> Void {
         play()
 
@@ -75,7 +83,10 @@ class ViewController: UIViewController {
             leftString = runningString
             runningString = ""
             outputLabel.text = runningString
-            currentOperation = operation
+            if (leftString != ""){
+                //For sorting out the error, Suppose if someone presses Any Operation at the first chance.
+                currentOperation = operation
+            }
         } else{
             if (runningString != ""){
                 rightString = runningString

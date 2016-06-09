@@ -249,6 +249,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgp-LG-Pt7">
+                                <rect key="frame" x="283" y="539" width="317" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="LhK-Es-X3F"/>
+                                    <constraint firstAttribute="width" constant="200" id="qlU-OM-Xfg"/>
+                                </constraints>
+                                <state key="normal" image="clear"/>
+                                <connections>
+                                    <action selector="onClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="me4-b0-O92"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -258,8 +269,10 @@
                             <constraint firstItem="bPO-2h-gS5" firstAttribute="top" secondItem="rOM-Pe-E3c" secondAttribute="top" constant="118" id="HHK-OS-WWs"/>
                             <constraint firstItem="TVd-Wx-sl1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Oh6-dy-3Qg"/>
                             <constraint firstItem="kan-xN-8PF" firstAttribute="trailing" secondItem="rOM-Pe-E3c" secondAttribute="trailing" id="QVc-zh-5FW"/>
+                            <constraint firstItem="Wgp-LG-Pt7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U9Y-cR-ydw"/>
                             <constraint firstItem="kan-xN-8PF" firstAttribute="leading" secondItem="rOM-Pe-E3c" secondAttribute="leading" id="ZRZ-Lt-fyk"/>
                             <constraint firstItem="rOM-Pe-E3c" firstAttribute="trailing" secondItem="kan-xN-8PF" secondAttribute="trailing" constant="30" id="ctn-zy-n6h"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wgp-LG-Pt7" secondAttribute="bottom" constant="5" id="fNz-0E-d2S"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tN8-lU-TGv" secondAttribute="trailing" constant="-20" id="kqs-li-8HP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TVd-Wx-sl1" secondAttribute="bottom" id="mPj-uR-IM9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TVd-Wx-sl1" secondAttribute="trailing" constant="-20" id="pkR-PX-483"/>
@@ -297,6 +310,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
