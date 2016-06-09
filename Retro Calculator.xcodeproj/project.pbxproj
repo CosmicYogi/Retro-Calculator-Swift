@@ -14,6 +14,7 @@
 		94FF75EE1D09570A00510B04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94FF75ED1D09570A00510B04 /* Assets.xcassets */; };
 		94FF75F11D09570A00510B04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FF75EF1D09570A00510B04 /* LaunchScreen.storyboard */; };
 		94FF75F91D0987BE00510B04 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94FF75F81D0987BE00510B04 /* Minecraft.ttf */; };
+		94FF75FB1D099ED100510B04 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 94FF75FA1D099ED100510B04 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		94FF75F01D09570A00510B04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94FF75F21D09570A00510B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94FF75F81D0987BE00510B04 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		94FF75FA1D099ED100510B04 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				94FF75EF1D09570A00510B04 /* LaunchScreen.storyboard */,
 				94FF75F21D09570A00510B04 /* Info.plist */,
 				94FF75EA1D09570A00510B04 /* Retro_Calculator.xcdatamodeld */,
+				94FF75FA1D099ED100510B04 /* btn.wav */,
 			);
 			path = "Retro Calculator";
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94FF75FB1D099ED100510B04 /* btn.wav in Resources */,
 				94FF75F11D09570A00510B04 /* LaunchScreen.storyboard in Resources */,
 				94FF75EE1D09570A00510B04 /* Assets.xcassets in Resources */,
 				94FF75F91D0987BE00510B04 /* Minecraft.ttf in Resources */,
