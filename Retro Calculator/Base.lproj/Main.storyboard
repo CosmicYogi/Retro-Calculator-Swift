@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Retro_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,49 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spacebg" translatesAutoresizingMaskIntoConstraints="NO" id="TVd-Wx-sl1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rOM-Pe-E3c">
+                                <rect key="frame" x="7" y="28" width="374" height="635"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="d3h-br-Itg">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="95"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="95" id="8AC-ZT-PDe"/>
+                                            <constraint firstAttribute="width" constant="374" id="uoQ-11-nlf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="Zhj-8X-Myd">
+                                        <rect key="frame" x="7" y="95" width="360" height="540"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="360" id="8y7-Cq-6PK"/>
+                                            <constraint firstAttribute="height" constant="540" id="p2B-9U-Bis"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rOM-Pe-E3c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9gb-Ke-V07"/>
+                            <constraint firstItem="TVd-Wx-sl1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Fse-VG-IRL"/>
+                            <constraint firstItem="TVd-Wx-sl1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Oh6-dy-3Qg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TVd-Wx-sl1" secondAttribute="bottom" id="mPj-uR-IM9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TVd-Wx-sl1" secondAttribute="trailing" constant="-20" id="pkR-PX-483"/>
+                            <constraint firstItem="rOM-Pe-E3c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qAS-RF-Txl"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="440" y="353"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backpanel" width="620" height="938"/>
+        <image name="counter" width="516" height="133"/>
+        <image name="spacebg" width="988" height="946"/>
+    </resources>
 </document>

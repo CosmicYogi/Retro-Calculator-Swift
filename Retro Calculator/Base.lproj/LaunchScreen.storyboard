@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +18,36 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spacebg" translatesAutoresizingMaskIntoConstraints="NO" id="k3W-M4-lsV">
+                                <rect key="frame" x="0.0" y="0.0" width="598" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="k3W-M4-lsV" secondAttribute="height" multiplier="299:300" id="qzo-Ii-e2r"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3kr-97-XY6">
+                                <rect key="frame" x="180" y="28" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k3W-M4-lsV" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="9uo-pv-G61"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k3W-M4-lsV" secondAttribute="trailing" constant="-20" id="BWK-5b-YRe"/>
+                            <constraint firstAttribute="trailing" secondItem="k3W-M4-lsV" secondAttribute="trailing" constant="2" id="RtA-6c-Rny"/>
+                            <constraint firstItem="k3W-M4-lsV" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="bqw-m9-G7B"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="k3W-M4-lsV" secondAttribute="bottom" id="fsE-ie-mKF"/>
+                            <constraint firstItem="k3W-M4-lsV" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="s6l-Sz-AmG"/>
+                            <constraint firstItem="k3W-M4-lsV" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="sUA-Cf-FLB"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="k3W-M4-lsV" secondAttribute="bottom" id="vfg-fk-nXo"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9uo-pv-G61"/>
+                                <exclude reference="RtA-6c-Rny"/>
+                                <exclude reference="sUA-Cf-FLB"/>
+                                <exclude reference="fsE-ie-mKF"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +55,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="spacebg" width="988" height="946"/>
+    </resources>
 </document>
