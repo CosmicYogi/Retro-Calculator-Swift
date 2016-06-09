@@ -13,6 +13,7 @@
 		94FF75EC1D09570A00510B04 /* Retro_Calculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94FF75EA1D09570A00510B04 /* Retro_Calculator.xcdatamodeld */; };
 		94FF75EE1D09570A00510B04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94FF75ED1D09570A00510B04 /* Assets.xcassets */; };
 		94FF75F11D09570A00510B04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FF75EF1D09570A00510B04 /* LaunchScreen.storyboard */; };
+		94FF75F91D0987BE00510B04 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94FF75F81D0987BE00510B04 /* Minecraft.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		94FF75ED1D09570A00510B04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94FF75F01D09570A00510B04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94FF75F21D09570A00510B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FF75F81D0987BE00510B04 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		94FF75E21D09570A00510B04 /* Retro Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				94FF75F81D0987BE00510B04 /* Minecraft.ttf */,
 				94FF75E31D09570A00510B04 /* AppDelegate.swift */,
 				94FF75E51D09570A00510B04 /* ViewController.swift */,
 				94FF75E71D09570A00510B04 /* Main.storyboard */,
@@ -127,6 +130,7 @@
 			files = (
 				94FF75F11D09570A00510B04 /* LaunchScreen.storyboard in Resources */,
 				94FF75EE1D09570A00510B04 /* Assets.xcassets in Resources */,
+				94FF75F91D0987BE00510B04 /* Minecraft.ttf in Resources */,
 				94FF75E91D09570A00510B04 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +296,7 @@
 				94FF75F71D09570A00510B04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
